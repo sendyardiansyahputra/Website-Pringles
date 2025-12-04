@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pringles - Flavor Your Mind</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Pringles_Logo.svg/2560px-Pringles_Logo.svg.png"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header>
+      <nav class="navbar">
+        <div class="nav-container">
+          <a href="#" class="logo">
+            <img src="logo.jpeg" alt="Pringles Logo" />
+            <span>PRINGLES</span>
+          </a>
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link active">Home</a></li>
+            <li><a href="#product" class="nav-link">Product</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Home Section -->
+      <section id="home" class="section home-section">
+        <div class="container">
+          <div class="home-content">
+            <div class="home-text">
+              <h1 class="home-title">PRINGLES</h1>
+              <h2 class="home-subtitle">FLAVOR YOUR MIND</h2>
+              <p class="home-desc">
+                Changing snacking one chip at a time. Pringles dengan rasa yang
+                tak terlupakan dan tekstur khas yang renyah.
+              </p>
+              <div class="home-buttons">
+                <a href="#product" class="btn btn-primary">Explore Products</a>
+                <a href="#about" class="btn btn-secondary">Learn More</a>
+              </div>
+            </div>
+            <div class="home-image">
+              <img src="pringles.jpeg" alt="Pringles Chips" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Product Section -->
+      <section id="product" class="section product-section">
+        <div class="container">
+          <h2 class="section-title">Our Products</h2>
+          <p class="section-subtitle">
+            Temukan kelezatan yang tak terlupakan dalam setiap kemasan
+          </p>
+
+          <!-- Video Iklan -->
+          <div class="video-container">
+            <h3 class="video-title">Pringles Commercial</h3>
+            <div class="video-wrapper">
+              <!-- YouTube Embed -->
+              <iframe
+                width="100%"
+                height="100%"
+                src="https://www.youtube.com/embed/3VoG3PsGWbE"
+                title="Pringles Commercial"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+
+          <!-- Deskripsi Produk -->
+          <div class="product-description">
+            <h3>Pringles Potato Crisps</h3>
+            <p>
+              Pringles adalah camilan keripik kentang berbentuk tipis dan
+              melengkung yang disajikan dalam kemasan tabung ikonik. Produk ini
+              dikenal sebagai snack modern yang praktis, higienis, dan mudah
+              dibawa. Pringles menawarkan pengalaman ngemil yang lebih rapi dan
+              konsisten dibandingkan keripik pada umumnya.
+            </p>
+            <p>
+              Pringles memiliki tekstur yang renyah, ukuran keripik yang
+              seragam, serta permukaan yang dilapisi bumbu secara merata.
+              Bentuknya yang melengkung membuatnya mudah dinikmati hanya dengan
+              sekali gigitan. Keripiknya tidak mudah hancur karena terlindungi
+              oleh kemasan tabung yang kokoh. Pringles juga hadir dalam beberapa
+              varian rasa populer seperti Original, Sour Cream & Onion,
+              Barbecue, dan Hot & Spicy.
+            </p>
+            <p>
+              Keunggulan utama Pringles adalah kerenyahannya yang stabil dari
+              awal hingga akhir, rasa yang konsisten di setiap keping, dan
+              kemasan praktis yang menjaga kebersihan produk. Pilihan rasanya
+              beragam dan cocok untuk berbagai suasana, mulai dari belajar,
+              bekerja, hingga kumpul bersama teman. Dengan tampilan modern dan
+              kualitas rasa yang kuat, Pringles menjadi camilan yang mudah
+              disukai semua kalangan.
+            </p>
+          </div>
+
+          <!-- Product Variants Carousel -->
+          <div class="variants-section">
+            <h3 class="variants-title">Our Flavors</h3>
+            <p class="variants-subtitle">
+              Pilih varian favoritmu dan rasakan kelezatannya
+            </p>
+
+            <div class="carousel-container">
+              <div class="carousel-wrapper">
+                <div class="carousel-track">
+                  <!-- Varian produk akan dimasukkan via JavaScript -->
+                </div>
+              </div>
+              <button class="carousel-btn carousel-btn-prev">
+                <i class="fas fa-chevron-left"></i>
+              </button>
+              <button class="carousel-btn carousel-btn-next">
+                <i class="fas fa-chevron-right"></i>
+              </button>
+            </div>
+
+            <div class="dots-container">
+              <!-- Dots akan dimasukkan via JavaScript -->
+            </div>
+          </div>
+
+          <!-- Product Detail Modal -->
+          <div class="modal" id="productModal">
+            <div class="modal-content">
+              <span class="close-modal">&times;</span>
+              <div class="modal-body">
+                <!-- Konten akan dimasukkan via JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section about-section">
+        <div class="container">
+          <h2 class="section-title">About Pringles</h2>
+          <div class="about-content">
+            <div class="about-image">
+              <img src="pringles1.jpeg" alt="About Pringles" />
+              <img src="pringles2.jpeg" alt="Pringles Keju" />
+            </div>
+            <div class="about-text">
+              <h3>Mengubah Dunia Camilan</h3>
+              <p>
+                Pringles diluncurkan pertama kali pada tahun 1968 dan segera
+                menjadi ikon camilan dunia. Dengan bentuk melengkung yang unik
+                dan kemasan tabung yang ikonik, Pringles merevolusi cara kita
+                menikmati keripik kentang.
+              </p>
+              <p>
+                Kami berkomitmen untuk memberikan pengalaman camilan yang
+                konsisten, lezat, dan menyenangkan. Setiap keripik Pringles
+                dibuat dengan standar kualitas tertinggi, menggunakan
+                bahan-bahan pilihan.
+              </p>
+              <p>
+                Inovasi selalu menjadi inti dari merek kami. Dari rasa klasik
+                hingga varian terbaru, kami terus menciptakan pengalaman rasa
+                yang tak terlupakan untuk para pecinta camilan di seluruh dunia.
+              </p>
+              <div class="about-features">
+                <div class="feature">
+                  <i class="fas fa-leaf"></i>
+                  <h4>Bahan Berkualitas</h4>
+                  <p>Menggunakan kentang pilihan dan bahan premium</p>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-star"></i>
+                  <h4>Rasa Terjamin</h4>
+                  <p>Setiap keripik memiliki rasa yang konsisten dan lezat</p>
+                </div>
+                <div class="feature">
+                  <i class="fas fa-recycle"></i>
+                  <h4>Kemasan Ramah Lingkungan</h4>
+                  <p>
+                    Kemasan yang dapat didaur ulang untuk bumi yang lebih baik
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2 class="section-title">Contact Us</h2>
+          <p class="section-subtitle">
+            Hubungi kami untuk informasi lebih lanjut
+          </p>
+
+          <div class="contact-content">
+            <div class="contact-info">
+              <h3>Get in Touch</h3>
+              <p>
+                Kami senang mendengar dari Anda. Jangan ragu untuk menghubungi
+                kami untuk pertanyaan, umpan balik, atau kerja sama.
+              </p>
+
+              <div class="contact-details">
+                <div class="contact-item">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div>
+                    <h4>Alamat</h4>
+                    <p>Jl. Snack Raya No. 123, Jakarta, Indonesia</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-phone"></i>
+                  <div>
+                    <h4>Telepon</h4>
+                    <p>(021) 1234-5678</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-envelope"></i>
+                  <div>
+                    <h4>Email</h4>
+                    <p>info@pringles-indonesia.com</p>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <i class="fas fa-clock"></i>
+                  <div>
+                    <h4>Jam Operasional</h4>
+                    <p>Senin - Jumat: 08:00 - 17:00</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="social-links">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+                  <a href="#"><i class="fab fa-facebook"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <div class="contact-card">
+                <h3>Kirim Pesan</h3>
+                <p class="contact-card-sub">
+                  Punya pertanyaan? Kami siap membantu — tinggalkan pesan, dan
+                  kami akan merespons secepatnya.
+                </p>
+                <form id="contactForm" class="styled-form">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <label for="name">Nama Lengkap</label>
+                      <div class="input-icon">
+                        <i class="fas fa-user"></i>
+                        <input
+                          type="text"
+                          id="name"
+                          name="name"
+                          placeholder="Masukkan nama lengkap"
+                          required
+                        />
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="email">Email</label>
+                      <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input
+                          type="email"
+                          id="email"
+                          name="email"
+                          placeholder="you@example.com"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="subject">Subjek</label>
+                    <div class="input-icon">
+                      <i class="fas fa-tag"></i>
+                      <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Subjek pesan"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="message">Pesan</label>
+                    <div class="input-icon textarea-icon">
+                      <i class="fas fa-pencil-alt"></i>
+                      <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Tulis pesan Anda..."
+                        required
+                      ></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-actions">
+                    <label class="checkbox"
+                      ><input type="checkbox" name="newsletter" /> Berlangganan
+                      newsletter</label
+                    >
+                    <button type="submit" class="btn btn-primary btn-submit">
+                      <span>Kirim Pesan</span>
+                    </button>
+                  </div>
+
+                  <div
+                    class="form-success"
+                    aria-live="polite"
+                    style="display: none"
+                  >
+                    Terima kasih! Pesan Anda telah dikirim.
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <img src="logo.jpeg" alt="Pringles Logo" />
+            <h3>PRINGLES</h3>
+            <p>Flavor Your Mind</p>
+          </div>
+
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Produk</h4>
+              <ul>
+                <li><a href="#product">Original</a></li>
+                <li><a href="#product">Sour Cream & Onion</a></li>
+                <li><a href="#product">Hot & Spicy</a></li>
+                <li><a href="#product">Cheesy Cheese</a></li>
+                <li><a href="#product">Saucy BBQ</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Perusahaan</h4>
+              <ul>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#contact">Kontak</a></li>
+                <li><a href="#">Karir</a></li>
+                <li><a href="#">Berita</a></li>
+                <li><a href="#">Sertifikasi</a></li>
+              </ul>
+            </div>
+
+            <div class="footer-column">
+              <h4>Bantuan</h4>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Cara Pembelian</a></li>
+                <li><a href="#">Pengiriman</a></li>
+                <li><a href="#">Kebijakan Privasi</a></li>
+                <li><a href="#">Syarat & Ketentuan</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2025 Pringles Indonesia. All rights reserved.</p>
+          <p>Website created for educational purposes.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
